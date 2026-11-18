@@ -7,3 +7,5 @@ Subscribe to my YouTube channel here: http://bit.ly/CognitiveSurge where I build
 ![Preview](todoist-preview.png?raw=true)
 
 This project is licensed under the terms of the license found in [LICENSE.txt](LICENSE.txt).
+
+Run `yarn test` (or `npm test`) to execute the React Testing Library test suite.
