@@ -8,4 +8,6 @@ To run the test suite, use `yarn test` (or `npm test`).
 
 To start the development server, use `yarn start` (or `npm start`).
 
+This project is licensed under the terms found in `LICENSE.txt`.
+
 ![Preview](todoist-preview.png?raw=true)
