@@ -6,4 +6,6 @@ Subscribe to my YouTube channel here: http://bit.ly/CognitiveSurge where I build
 
 To run the test suite, use `yarn test` (or `npm test`).
 
+To start the development server, use `yarn start` (or `npm start`).
+
 ![Preview](todoist-preview.png?raw=true)
