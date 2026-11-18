@@ -4,4 +4,6 @@ This application (a Todoist clone) was built using create-react-app as a base, a
 
 Subscribe to my YouTube channel here: http://bit.ly/CognitiveSurge where I build projects like this! And don't forget, you can contribute to this project (highly encouraged!). One thing I didn't get time to do was incorporate accessibility into this application, so I'd love to see that added!
 
+To run the test suite, use `yarn test` (or `npm test`).
+
 ![Preview](todoist-preview.png?raw=true)
