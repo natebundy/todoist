@@ -6,6 +6,10 @@ Subscribe to my YouTube channel here: http://bit.ly/CognitiveSurge where I build
 
 To run the test suite, use `yarn test` (or `npm test`).
 
+To generate a test coverage report in the `coverage` folder, use `yarn test --coverage` (or `npm test -- --coverage`).
+
 To start the development server, use `yarn start` (or `npm start`).
+
+To create a production build in the `build` folder, use `yarn build` (or `npm run build`).
 
 ![Preview](todoist-preview.png?raw=true)
