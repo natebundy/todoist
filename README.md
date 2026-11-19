@@ -8,4 +8,6 @@ To run the test suite, use `yarn test` (or `npm test`).
 
 To start the development server, use `yarn start` (or `npm start`).
 
+Why did the chicken cross the road? To get to the other side of this amazing Todoist application!
+
 ![Preview](todoist-preview.png?raw=true)
