@@ -12,4 +12,6 @@ To start the development server, use `yarn start` (or `npm start`).
 
 To create a production build in the `build/` folder, use `yarn build` (or `npm run build`).
 
+This project is licensed under the MIT License; see `LICENSE.txt` for details.
+
 ![Preview](todoist-preview.png?raw=true)
