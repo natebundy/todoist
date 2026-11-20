@@ -8,6 +8,10 @@ Before running the app, copy `src/firebase.js.example` to `src/firebase.js` and 
 
 To run the test suite, use `yarn test` (or `npm test`).
 
+### Health file
+
+A static health file lives at `public/health.json` and is served at `/health.json`. Run `node scripts/smoke-health.js` to check that it reports `{"status":"ok"}`; the script exits with code 0 on success and 1 on failure. It uses only Node built-ins and is separate from `yarn test`.
+
 To start the development server, use `yarn start` (or `npm start`).
 
 To create a production build in the `build/` folder, use `yarn build` (or `npm run build`).
