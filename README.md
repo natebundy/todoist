@@ -12,4 +12,8 @@ To start the development server, use `yarn start` (or `npm start`).
 
 To create a production build in the `build/` folder, use `yarn build` (or `npm run build`).
 
+### Smoke check
+
+To validate the `public/status.json` fixture, run `node scripts/smoke-status.js`. It exits with code 0 and prints a single success line when `status` is `"ok"`, and exits non-zero with a message if the file is missing, is not valid JSON, or has any other status. It uses only Node built-ins, so it needs no install step and no Firebase config.
+
 ![Preview](todoist-preview.png?raw=true)
