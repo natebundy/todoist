@@ -8,6 +8,8 @@ Before running the app, copy `src/firebase.js.example` to `src/firebase.js` and 
 
 To run the test suite, use `yarn test` (or `npm test`).
 
+To run the tests with a coverage report (written to `coverage/`, with a 90% global threshold), use `yarn test --coverage` (or `npm test -- --coverage`).
+
 To start the development server, use `yarn start` (or `npm start`).
 
 To create a production build in the `build/` folder, use `yarn build` (or `npm run build`).
