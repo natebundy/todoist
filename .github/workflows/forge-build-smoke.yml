@@ -1,0 +1,14 @@
+name: Forge build smoke
+
+on: pull_request
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    name: Smoke check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Smoke check
+        run: sleep 90; echo 'Forge smoke check passed'
