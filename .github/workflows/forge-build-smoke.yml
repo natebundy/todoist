@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Smoke check
-        run: sleep 90; echo 'Forge smoke check passed'
+        run: echo 'Forge smoke check passed'
