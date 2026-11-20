@@ -10,4 +10,6 @@ To run the test suite, use `yarn test` (or `npm test`).
 
 To start the development server, use `yarn start` (or `npm start`).
 
+To create a production build in the `build/` folder, use `yarn build` (or `npm run build`).
+
 ![Preview](todoist-preview.png?raw=true)
