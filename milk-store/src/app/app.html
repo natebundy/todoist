@@ -1,0 +1,45 @@
+<header class="masthead">
+  <div class="brand">
+    <span class="logo" aria-hidden="true">🐄</span>
+    <div>
+      <h1>The Milk Barn</h1>
+      <p>Grab a carton off the shelf and drop it in your cart.</p>
+    </div>
+  </div>
+  <div class="summary" aria-live="polite">
+    🛒 {{ cart.itemCount() }} · {{ cart.total() | currency: 'USD' }}
+  </div>
+</header>
+
+<main class="store" cdkDropListGroup>
+  <section class="shelves" aria-labelledby="shelf-heading">
+    <h2 id="shelf-heading">Dairy Aisle</h2>
+    <div
+      class="shelf"
+      cdkDropList
+      cdkDropListSortingDisabled
+      cdkDropListHasAnchor
+      [cdkDropListEnterPredicate]="noEntry"
+    >
+      @for (milk of milks; track milk.id) {
+        <div class="slot" cdkDrag [cdkDragData]="milk" data-testid="shelf-item">
+          <app-milk-carton class="carton" [milk]="milk" />
+          <app-milk-carton *cdkDragPreview [milk]="milk" />
+          <div class="slot-placeholder" *cdkDragPlaceholder>
+            <app-milk-carton [milk]="milk" />
+          </div>
+          <div class="tag">
+            <strong>{{ milk.name }}</strong>
+            <span>{{ milk.tagline }}</span>
+            <span class="price">{{ milk.price | currency: 'USD' }}</span>
+          </div>
+          <button type="button" class="add" (click)="cart.add(milk)" [attr.aria-label]="'Add ' + milk.name + ' to cart'">
+            Add to cart
+          </button>
+        </div>
+      }
+    </div>
+  </section>
+
+  <app-shopping-cart class="cart-column" />
+</main>

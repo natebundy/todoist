@@ -1,0 +1,162 @@
+:host {
+  display: block;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem 1.25rem 2rem;
+}
+
+.masthead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-radius: 18px;
+  color: #fff;
+  background:
+    radial-gradient(circle at 12% 30%, #fff 0 14px, transparent 15px),
+    radial-gradient(circle at 80% 70%, #fff 0 20px, transparent 21px),
+    radial-gradient(circle at 55% 20%, #fff 0 10px, transparent 11px),
+    #2f80d1;
+  background-blend-mode: soft-light;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  h1 {
+    margin: 0;
+    font-size: 1.9rem;
+  }
+
+  p {
+    margin: 0.15rem 0 0;
+    opacity: 0.9;
+  }
+}
+
+.logo {
+  font-size: 2.5rem;
+}
+
+.summary {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  padding: 0.4rem 0.9rem;
+  font-weight: 700;
+}
+
+.store {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 420px);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  align-items: start;
+}
+
+@media (max-width: 860px) {
+  .store {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cart-column {
+  position: sticky;
+  top: 1rem;
+}
+
+.shelves h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.4rem;
+}
+
+/* Wooden shelving unit: each slot sits on a plank. */
+.shelf {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  row-gap: 1.25rem;
+  padding: 1rem 0.75rem 0.5rem;
+  border-radius: 14px;
+  background: #f3e3c3;
+  border: 10px solid #9b6a3c;
+  box-shadow: inset 0 0 0 2px #7a5130;
+}
+
+.slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.5rem 0.5rem 0.75rem;
+  border-bottom: 12px solid #b07a46;
+  box-shadow: 0 6px 0 -2px #7a5130;
+  cursor: grab;
+  touch-action: none;
+}
+
+.slot:active {
+  cursor: grabbing;
+}
+
+.carton {
+  width: 96px;
+  transition: transform 150ms ease;
+}
+
+.slot:hover .carton {
+  transform: translateY(-4px) rotate(-2deg);
+}
+
+/* What stays on the shelf while a carton is being dragged. */
+.slot-placeholder {
+  opacity: 0.35;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  border-bottom: 12px solid #b07a46;
+
+  app-milk-carton {
+    width: 96px;
+  }
+}
+
+.tag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.25;
+  background: #fff;
+  border-radius: 6px;
+  padding: 0.3rem 0.5rem;
+  min-width: 80%;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+
+  strong {
+    font-size: 0.9rem;
+  }
+
+  .price {
+    color: #c0392b;
+    font-weight: 700;
+  }
+}
+
+.add {
+  border: none;
+  border-radius: 999px;
+  padding: 0.3rem 0.8rem;
+  background: #2f80d1;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.add:focus-visible {
+  outline: 3px solid #ffb703;
+  outline-offset: 2px;
+}
