@@ -1,0 +1,7 @@
+/dist
+/out-tsc
+/node_modules
+/.angular/cache
+/coverage
+.DS_Store
+npm-debug.log

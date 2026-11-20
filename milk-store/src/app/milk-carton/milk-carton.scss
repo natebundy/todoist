@@ -1,0 +1,16 @@
+:host {
+  display: inline-block;
+  width: 120px;
+  line-height: 0;
+}
+
+svg {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+text {
+  font-family: 'Trebuchet MS', 'Segoe UI', system-ui, sans-serif;
+  user-select: none;
+}
